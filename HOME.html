@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>BURGER KING PAKISTAN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+    <style>
+        body {
+
+            margin-top: 100px;
+            font-family: BlockBerth;
+
+        }
+
+
+        .bk1 {
+            font-size: 100px;
+            font-family: BlockBerth;
+            text-align: center;
+        }
+
+        .main {
+            font-family: BlockBerth;
+            background-color: orange;
+            align-items: center;
+        }
+
+        .bottom {
+
+            background-color: black;
+            text-align: center;
+            color: grey;
+        }
+
+        .center {
+            background-color: black;
+            text-align: center;
+            color: grey;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #bd {
+            text-align: center;
+            background-color: black;
+            color: grey;
+        }
+
+        /* Add a black background color to the top navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: orange;
+            font-family: BlockBerth;
+        }
+
+        /* Style the links inside the navigation bar */
+        .topnav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 30px;
+            align-items: center;
+            font-family: BlockBerth;
+            padding-left: 70px;
+            margin-left: 50px;
+        }
+
+        /* Change the color of links on hover */
+        .topnav a:hover {
+            background-color: orange;
+            color: black;
+        }
+
+        /* Style the "active" element to highlight the current page */
+        .topnav a.active {
+            background-color: orange;
+            color: white;
+            font-family: BlockBerth;
+        }
+
+        /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+        @media screen and (max-width: 600px) {
+
+            .topnav a,
+            .topnav input[type=text] {
+                float: none;
+                display: block;
+                text-align: left;
+                width: 100%;
+                margin: 0;
+                padding: 14px;
+            }
+
+            .topnav input[type=text] {
+                border: 1px solid #ccc;
+            }
+        }
+
+        #or {
+
+            color: orange;
+        }
+
+        .image {
+
+            align-items: center;
+            text-align: center;
+            background-image: url(https://media-assets-02.thedrum.com/cache/images/thedrum-prod/s3-news-tmp-61194-flame_grill--default--645.jpg);
+            color: white;
+            margin: auto;
+        }
+
+        .image1 {
+
+            align-items: center;
+            text-align: center;
+            background-image: url'data:image/jpeg;base64,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');
+            margin: auto;
+            color: white;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            color:black;
+
+            #bold {
+                font-family: 'BlockBerth';
+                font-size: 3.375em;
+                color: white;
+                line-height: 1;
+                text-transform: none;
+                margin: auto;
+                text-align: center;
+
+            }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- <div class="main">
+        <div class="container">
+            <nav class="navbar navbar-light" style="background-color:orange;">
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#"> <img src="https://www.bkpakistan.com/home/img/logo.png"
+                            alt="Burger King"> BURGER KING</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">ONLINE ORDER <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">CURRENT PROMOTIONS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">BK MENU</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    BK LOCATOR
+                                </a>
+                        </ul>
+                    </div>
+                </nav>
+            </nav>
+        </div>
+    </div> -->
+
+    <div class="top">
+        <div class="topnav">
+            <a class="active" href="C:\Users\haris\Desktop\Website\HOME.html"><img src="https://www.bkpakistan.com/home/img/logo.png"></a>
+            <a href="C:\Users\haris\Desktop\Website\INDEXHOME.html">BK MENU</a>
+            <a href="#contact">FRESH OFFERS</a>
+            <a href="C:\Users\haris\Desktop\Website\PROMOTION.html">PROMOTION</a>
+            <a href="#contact">BK LOCATOR</a>
+        </div>
+    </div>
+
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.bkpakistan.com/home/img/main-slider/whopper-slider-new.jpg" class="d-block w-100"
+                    alt="Whopper Feast">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.bkpakistan.com/home/img/main-slider/kings-treat-399-slider.jpg"
+                    class="d-block w-100" alt="King Treat 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.bkpakistan.com/home/img/main-slider/kings-sreat-749-slider.jpg"
+                    class="d-block w-100" alt="King Treat 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.bkpakistan.com/home/img/main-slider/Whopper-Fest-Web-new.jpg"
+                    class="d-block w-100" alt="Chatpata Chicken">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="center">
+        <h1 id="or">
+            JOIN THE BK&reg;<br> FAN FREEDOM
+        </h1>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <a href="https://www.facebook.com/burgerkingpakistan/" class="fa fa-facebook"></a>
+                </div>
+                <div class="col">
+                    <a href="https://twitter.com/burgerkingpak" class="fa fa-twitter" id="tw"></a>
+                </div>
+                <div class="col">
+                    <a href="https://www.instagram.com/burgerkingpak/" class="fa fa-instagram" id="inst"></a><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <h1 id="bd"><i>follow your taste buds</i></h1>
+
+
+    <div class="image">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col">
+
+                    <h1 id="bold">SINCE 1954</h1>
+                    <p><i>60 years of our flame-grilled,</i><br>
+                        <i>freshly prepared tradition goes into every order.</i></p>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="image1">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col">
+
+                    <h1 id="bold">MADE TO ORDER</h1>
+                    <p><i>Every WHOPPER&reg; Sandwich is,</i><br>
+                        <i>made to order.</i></p>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <h1> BK INFO</h1>
+                </div>
+
+
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <h1>ABOUT BK</h1>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <h1> BK CARES </h1>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <h1> CONTACT US </h1>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <h1>BURGER KING</h1>
+        <p>TM & COPYRIGHT 2017 BURGERKING CORPORATION.ALL RIGHT RESERVED.</p>
+        <P>POLICIES|LEGAL
+        </P>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
